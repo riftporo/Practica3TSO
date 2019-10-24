@@ -4,6 +4,18 @@
 #include <conio.h>
 
 using namespace std;
+
+int potencia(){
+ int e, b;
+ cout << "Ingrese la base: " << endl;
+ cin >> b;
+ cout << "A que exponente desea elevar la base" << endl;
+ cin >> e;
+ int R = pow(b,e);
+ cout <<"La base "<< b << " elevada a la " << e << endl;
+ cout <<"Es Igual a = "<< R << endl;
+}
+
 int pares(){
  int i, numero, pares, impares;
 
@@ -83,7 +95,7 @@ int main()
         switch(tecla){
         case 1:
             cout<<"Elejiste Potencia \n";
-            
+            potencia();
             break;
         case 2:
             cout<<"Elejiste Factorial \n";
