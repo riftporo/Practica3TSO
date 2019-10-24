@@ -3,6 +3,29 @@
 #include <cstdlib>
 
 using namespace std;
+int pares(){
+ int i, numero, pares, impares;
+
+    pares = 0;
+    impares = 0;
+
+    for ( i = 1 ; i <= 5 ; i++ )
+    {
+        printf( "\n   Introduzca un n%cmero entero %d: ", 163, i );
+        scanf( "%d", &numero );
+
+        if ( numero % 2 == 0 )
+            pares++;
+        else
+            impares++;
+    }
+
+    printf( "\n   Ha introducido %d n%cmero(s) par(es) y %d impar(es).", pares, 163, impares );
+
+    getch(); /* Pausa */
+
+    return 0;
+}
 
 int promedio(){
     int n;
@@ -67,6 +90,7 @@ int main()
             break;
         case 3:
             cout<<"Elejiste Num. Pares \n";
+			pares();
             break;
         case 4:
             cout<<"Elejiste Promedio \n";
