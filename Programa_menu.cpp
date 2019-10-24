@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <conio.h>
+#include <math.h>
 
 using namespace std;
 
