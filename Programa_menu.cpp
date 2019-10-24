@@ -18,26 +18,25 @@ int potencia(){
 }
 
 int pares(){
- int i, numero, pares, impares;
+ int  d,numero, pares;
 
-    pares = 0;
-    impares = 0;
+    pares = 0; //pares se iguala a 0 para indicar que no hay ningun numero iniciado
+    
+    printf( "\n   Cuantos numeros deseas : " );//pregunto cuantos numeros quieres
+    scanf( "%d", &d );
 
-    for ( i = 1 ; i <= 5 ; i++ )
+    for (int i = 1 ; i <= d ; i++ ) // se crea un for que pedira 5 veces un valor
     {
-        printf( "\n   Introduzca un n%cmero entero %d: ", 163, i );
+        printf( "\n   Introduzca un numero entero %d: ", i ); //almacena el numero colocado
         scanf( "%d", &numero );
 
-        if ( numero % 2 == 0 )
+        if ( numero % 2 == 0 ){// este comando divide el numero y si da el resultado es par 
             pares++;
-        else
-            impares++;
+       printf( "\n   El numero %d es  par", numero );}
     }
 
-    printf( "\n   Ha introducido %d n%cmero(s) par(es) y %d impar(es).", pares, 163, impares );
-
-    getch(); /* Pausa */
-
+    printf( "\n   Ha introducido %d numero(s) par(es).", pares );
+    
     return 0;
 }
 
