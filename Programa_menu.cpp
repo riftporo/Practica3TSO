@@ -25,7 +25,7 @@ int pares(){
     printf( "\n   Cuantos numeros deseas : " );//pregunto cuantos numeros quieres
     scanf( "%d", &d );
 
-    for (int i = 1 ; i <= d ; i++ ) // se crea un for que pedira 5 veces un valor
+    for (int i = 1 ; i <= d ; i++ ) // se crea un for que se repitara asta que sea igual al numero de veces desea 
     {
         printf( "\n   Introduzca un numero entero %d: ", i ); //almacena el numero colocado
         scanf( "%d", &numero );
