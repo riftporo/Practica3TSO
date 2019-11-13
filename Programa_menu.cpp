@@ -17,7 +17,7 @@ int potencia(){
  cout <<"Es Igual a = "<< R << endl;
 }
 
-int pares(){
+int pares(){ //creado por jose Ivan Martinez
  int  d,numero, pares;
 
     pares = 0; //pares se iguala a 0 para indicar que no hay ningun numero iniciado
