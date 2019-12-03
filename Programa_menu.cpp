@@ -23,7 +23,7 @@ int pares(){  //creado por jose Ivan Martinez Lopez
     pares = 0; //pares se iguala a 0 para indicar que no hay ningun numero iniciado
     
     printf( "\n   Cuantos numeros deseas : " );//pregunto cuantos numeros quieres
-    scanf( "%d", &d );
+    scanf( "%d", &d ); //este codigo se dedica a interpretar los botones o en este caso los numeros que son precionados
 
     for (int i = 1 ; i <= d ; i++ ) // se crea un for que se repitara asta que sea igual al numero de veces desea 
     {
@@ -32,10 +32,10 @@ int pares(){  //creado por jose Ivan Martinez Lopez
 
         if ( numero % 2 == 0 ){// este comando divide el numero y si da el resultado es par 
             pares++;
-       printf( "\n   El numero %d es  par", numero );}
+       printf( "\n   El numero %d es  par", numero );} //muestra el numero 
     }
 
-    printf( "\n   Ha introducido %d numero(s) par(es).", pares );
+    printf( "\n   Ha introducido %d numero(s) par(es).", pares ); //este comando muestra el numero de pares ingresados por el usuaio
     
     return 0;
 }
